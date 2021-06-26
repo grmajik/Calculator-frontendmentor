@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	transition: all .5s;
+	transition: background-color .5s;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .calc-body {
-	transition: all .5s;
+	transition: background-color .5s;
 	width: 500px;
 	height: 700px;
 	background-color: var(--calc-background-color);
@@ -55,7 +55,7 @@ body {
 	line-height: 1;
 	position: relative;
 	color: var(--theme-toggler-text-color);
-	transition: all .5s;
+	transition: color .5s;
 }
 
 .calc-theme-toggler>:nth-child(1) {
@@ -135,7 +135,7 @@ input[type=range]::-moz-range-track {
 	outline: 2px solid gray;
 	box-shadow: 0 0 3px silver;
 	font-family: 'Calculator', serif;
-	transition: all .5s;
+	transition: color .5s, outline .5s, box-shadow .5s;
 }
 
 .calc-buttons {
@@ -159,7 +159,7 @@ button {
 	font-size: 32px;
 	background-color: var(--digit-background-color);
 	color: var(--digit-text-color);
-	transition: background-color .5s, color .5s, box-shadow 5s;
+	transition: background-color .5s, color .5s;
 	border-radius: 10px;
 	font-family: 'Spartan';
 	font-weight: 700;
