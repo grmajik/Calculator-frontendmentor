@@ -125,7 +125,7 @@ input[type=range]::-moz-range-track {
 .calc-screen {
 	height: 25%;
 	background:
-		radial-gradient(circle at 50% -580%,
+		radial-gradient(circle at 50% -585%,
 		#cfe0cf 800px,
 		#bdcfbe 100px);
 	font-size: 90px;
@@ -300,6 +300,13 @@ button:nth-child(18):active {
 
 	button {
 		font-size: 26px;
+	}
+
+	.calc-screen {
+		background:
+			radial-gradient(circle at 50% -780%,
+			#cfe0cf 800px,
+			#bdcfbe 100px);
 	}
 
 	.calc-theme-toggler>:nth-child(4) {
