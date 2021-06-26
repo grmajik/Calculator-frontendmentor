@@ -1,9 +1,5 @@
 "use strict";
 
-if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-	console.log('🎉 Dark mode is supported');
-}
-
 const themeThumb = document.getElementById('themeSlider');
 
 themeThumb.addEventListener('click', e => {
@@ -28,7 +24,10 @@ function setTheme(value) {
 
 function switchTheme(value) {
 	const currentTheme = localStorage.getItem('theme');
-	if (currentTheme === 'blue-theme') {
+	if (!currentTheme) {
+		document.documentElement.className = '';
+		document.documentElement.classList.add('beige-theme');
+	} else if (currentTheme === 'blue-theme') {
 		document.documentElement.className = '';
 		document.documentElement.classList.add('blue-theme');
 	} else if (currentTheme === 'beige-theme') {
