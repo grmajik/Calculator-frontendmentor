@@ -135,7 +135,6 @@ input[type=range]::-moz-range-track {
 	outline: 2px solid gray;
 	box-shadow: 0 0 3px silver;
 	font-family: 'Calculator', serif;
-	transition: color .5s, outline .5s, box-shadow .5s;
 }
 
 .calc-buttons {
@@ -159,7 +158,6 @@ button {
 	font-size: 32px;
 	background-color: var(--digit-background-color);
 	color: var(--digit-text-color);
-	transition: background-color .5s, color .5s;
 	border-radius: 10px;
 	font-family: 'Spartan';
 	font-weight: 700;
