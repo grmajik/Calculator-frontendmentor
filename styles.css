@@ -125,7 +125,7 @@ input[type=range]::-moz-range-track {
 .calc-screen {
 	height: 25%;
 	background:
-		radial-gradient(circle at 50% -635%,
+		radial-gradient(circle at 50% -580%,
 		#cfe0cf 800px,
 		#bdcfbe 100px);
 	font-size: 90px;
